@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Framgia-Broadcast-Service-Noti</string>
+    <string name="title_activity_player">PlayerActivity</string>
 </resources>
