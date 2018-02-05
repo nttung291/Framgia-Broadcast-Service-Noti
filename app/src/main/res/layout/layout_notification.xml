@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_noti_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_pause_black_24dp"
+        android:padding="16dp"/>
+    <ImageView
+        android:id="@+id/iv_noti_song"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"/>
+    <TextView
+        android:id="@+id/tv_noti_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_noti_play"
+        android:layout_toRightOf="@id/iv_noti_song"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorTextPrimary"/>
+    <TextView
+        android:id="@+id/tv_noti_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_noti_play"
+        android:layout_toRightOf="@id/iv_noti_song"
+        android:layout_below="@id/tv_noti_song"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorTextSecondary"/>
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.framgia.framgia_broadcast_service_noti.PlayerActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_name_mainsong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Make you feel my love"
+                android:textSize="16sp"
+                android:textColor="#fefefe"
+                android:textStyle="italic"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+            <TextView
+                android:layout_below="@id/tv_name_mainsong"
+                android:id="@+id/tv_artist_mainsong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adele"
+                android:textStyle="italic"
+                android:textColor="#b6ffffff"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/im_play_mainsong"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_time"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/time_start_mainsong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:text="0:00" />
+
+            <TextView
+                android:id="@+id/time_end_mainsong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="8dp"
+                android:text="4:20" />
+
+            <SeekBar
+                android:id="@+id/sb_mainsong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/time_start_mainsong"
+                android:layout_toRightOf="@id/time_start_mainsong"
+                android:layout_toLeftOf="@id/time_end_mainsong"
+                android:theme="@style/MySeekBarTheme" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="65dp">
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fb_play_mainsong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="normal"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_play_arrow_black_24dp"/>
+            <ImageView
+                android:id="@+id/iv_previous_mainsong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/fb_play_mainsong"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_skip_previous_black_24dp"
+                android:layout_centerVertical="true"/>
+            <ImageView
+                android:id="@+id/iv_next_mainsong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/fb_play_mainsong"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_skip_next_black_24dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
